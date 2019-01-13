@@ -2,31 +2,94 @@
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+[data-stack] {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 101px;
+  background-color: aliceblue;
+  margin: 25px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+[data-block] {
+  width: 25px;
+  float: left;
+}
+
+[data-block="25"] {
+  height: 25px;
+  background-color: blue;
+}
+
+[data-block="50"] {
+  height: 50px;
+  background-color: green;
+}
+
+[data-block="75"] {
+  height: 75px;
+  background-color: red;
+}
+
+[data-block="100"] {
+  height: 100px;
+  background-color: yellow;
+}
+
+[data-block="125"] {
+  height: 125px;
+  background-color: orange;
+}
+
+[data-block="150"] {
+  height: 150px;
+  background-color: purple;
+}
+
+#announce-game-won {
+  font-size: 50px;
+  text-align: center;
+}
+
+#reset {
+  margin-left: 25px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  height: 50px;
+  width: 100px;
   color: white;
+  background-color: purple;
+  border-radius: 10px;
+  font-size: 22px;
 }
 
-.App-link {
-  color: #61dafb;
+#reset:hover {
+  color: black;
+  background-color: orange;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#announce-winner {
+  font-size: 54px;
+  font-weight: bold;
+  background: linear-gradient(
+    to right,
+    orange,
+    yellow,
+    green,
+    cyan,
+    blue,
+    violet
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+p {
+  font-size: 34px;
+  text-decoration: underline;
+  color: purple;
 }
